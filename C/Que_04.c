@@ -1,23 +1,33 @@
 
+       /* Que - Write a program to print unit digit of a given number  */
 
-      /* Que - Write a program to calculate volume of a cuboid */
+       #include <stdio.h>
+       int main()
 
-     #include <stdio.h>
-     int main()
+                  {
+                    
+                       int c , d , f , g ,i = 0  ;
 
-                {
-                     int length , breadth , height;
+                       printf("Enter the Number ");
+                       scanf("%d", &c);
 
-                     printf("Enter the length\n");
-                     scanf("%d", &length);
+                       d = c;
+                       while ( d )
 
-                     printf("Enter the breadth\n");
-                     scanf("%d", &breadth);
+                                 {
+                                     d = d / 10;
+                                     i++ ;
+                                 }
 
-                     printf("Enter the height\n");
-                     scanf("%d", &height);
+                        g = c;
+                        for ( f = 1; f <= i - 1 ; f++ )
 
-                     printf("The volume of cuboid is %d", length * breadth * height);
-    
-                     return 0;
-               }
+                                        {
+                                            g = g / 10;
+                                        }
+
+                       printf("Unit Digit Is %d", g);
+
+                       return 0;
+
+                 }
