@@ -1,23 +1,21 @@
+ 
+        /* Que - Write a program to make the last digit of a number stored in a variable as zero.
+                  (Example - if x=2345 then make it x=2340) */
 
+       #include<stdio.h>
+       int main()
 
-      /* Que - Write a program to calculate volume of a cuboid */
+                  {
 
-     #include <stdio.h>
-     int main()
+                       int a , e ;  
 
-                {
-                     int length , breadth , height;
+                       printf(" Enter The Number\n ") ;
+                       scanf(" %d ", &a) ;
 
-                     printf("Enter the length\n");
-                     scanf("%d", &length);
+                       e = ( a / 10 ) * 10 ;
 
-                     printf("Enter the breadth\n");
-                     scanf("%d", &breadth);
+                       printf("New Number is %d",e) ;
 
-                     printf("Enter the height\n");
-                     scanf("%d", &height);
+                       return 0;
 
-                     printf("The volume of cuboid is %d", length * breadth * height);
-    
-                     return 0;
-               }
+                  }
