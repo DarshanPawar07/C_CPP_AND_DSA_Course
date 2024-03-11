@@ -1,25 +1,36 @@
 
+        
+         /*  Que - Write A Program To Check Whether Roots Of A Given Quadratic Equations  Are Real 
+                    And Distinct,Real And Equal Or Imaginary Roots.*/
 
-        /* Que -  Write a program to swap values of two int variables without using third variable 
-                  and without using +,- operators*/
+          #include <stdio.h>
+          int main()
 
-        #include <stdio.h>
-        int main()
+                     {
 
-                   {
-                         int a , b , c ;
+                            int a , b , c ;
 
-                         printf("Enter value of a and b\n");
-                         scanf("%d %d", &a, &b);
+                            printf("Enter the value of a , b , c\n");
+                            scanf(" %d %d %d ", &a, &b, &c);
 
-                           a = a * b;
+                            if ( (b * b) - (4 * a * c) > 0)
 
-                           b = a / b;
+                                                           {
+                                                              printf("Roots Are Real And Distinct");
+                                                           }
 
-                           a = a / b;
+                            if ( (b * b) - (4 * a * c) == 0)
 
-                          printf("Value of a is  %d and value of b is %d", a, b);
+                                                           {
+                                                              printf("Roots Are Real And Equal");
+                                                           }
 
-                          return 0;
+                            else
+                                 {
+                                    printf("Roots Are Imaginary");
+                                 }
+                                 
 
-                    }
+                            return 0;
+
+                     }
