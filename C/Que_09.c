@@ -1,24 +1,25 @@
 
-      /* Que -  WAP to take date as an input in below given format and convert the date format
-                and display the result as given below.
-                User Input date format - "DD/MM/YYYY" (27/11/2022) Output format "Day DD, Month MM, Year - YYYY" 
-                (Day 27 Month-07, Year - 2022)*/
-                
-    
-      #include<stdio.h>
-      int main()
+        /* Que - Write a program to print cubes of the first N natural numbers */
 
-                 { 
-                      int DD , MM , YYYY ;
+        #include<stdio.h>
+        int main()
 
-                      printf("Enter date  ( DD / MM / YYYY )");
+                  {
 
-                      scanf("%d/%d/%d" , &DD , &MM , &YYYY ) ;
- 
-                      printf(" DAY-%d , MONTH- %d , YEAR - %d ",DD , MM , YYYY );
+                      int n , i = 1 ;
 
-                      return 0;
+                      printf("Enter The value of n") ;
+                      scanf(" %d ", &n ) ;
 
-                  }
+                      while( i <= n )
+                                      {
+                                          printf(" %d\n ", i*i*i ) ;
+                                          i++;
+                                      }
 
- 
+                      return 0 ;
+
+                 }
+
+
+
